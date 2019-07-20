@@ -1,0 +1,18 @@
+
+.comment{
+    background-color: rgb(70, 70, 70);
+}
+.comment-border{
+    border: .2px inset #ddd;
+}
+
+.comment-date{
+    font-size: 10px;
+}
+
+#labels button{
+    font-size: 11px;
+    background-color: #67709A;
+    color: white;
+    margin: 0px 3px;
+}

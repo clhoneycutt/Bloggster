@@ -1,17 +1,14 @@
-﻿textarea{
+﻿*{
+    padding: 0px;
+    margin: 0px;
+}
+
+textarea{
     resize: none;
 }
 
 hr{
     background-color: #DDD;
-}
-
-#nav-placeholder{
-    height: 27vh;
-}
-
-.white-border{
-    border: 1px solid #ddd;
 }
 
 body{
@@ -20,18 +17,18 @@ body{
     color: #DDD;
 }
 
+.hidden{
+    display: none;
+}
+
+.white-border{
+    border: 1px solid #ddd;
+}
+
 .bg-shadowblue{
     background-color: #16204D;
 }
 
-#blog{
-    
-}
 
-#labels button{
-    font-size: 11px;
-    background-color: #67709A;
-    color: white;
-    margin: 0px 3px;
-}
+
 

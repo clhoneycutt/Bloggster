@@ -40,16 +40,67 @@
                         </form>
                     </div>
                 </div>
-        <div id="labels" class="my-2 p-2 mb-3 bg-shadowblue white-border mr-auto">
-            <button>Bloggster</button>
-            <button>Kitties</button>
-            <button>Smol Items</button>
-            <button>Fluffy</button>
-            <button>Samuel L Kitty</button>
+                <div id="labels" class="my-2 p-2 mb-3 bg-shadowblue white-border mr-auto">
+                    <button>Bloggster</button>
+                    <button>Kitties</button>
+                    <button>Smol Items</button>
+                    <button>Fluffy</button>
+                    <button>Samuel L Kitty</button>
+                </div>
+            </div>
         </div>
+        <div class="row">
+            <div id="comment-section" class="offset-md-1 col-md-7 py-3 bg-shadowblue white-border">
+
+                <h4>Comments</h4>
+
+                <div class="comment comment-border px-4 pt-1 mb-3">
+                    <!-- Clickable to user account? -->
+                    <div><strong>So and So says:</strong></div>
+                    <p class="comment-date">7/20/19 @@ 2:30 PM EST</p>
+                    <p>This is what I have to say!</p>
+                </div>
+
+                <div class="comment comment-border px-4 pt-1 mb-3">
+                    <div><strong>So and So says:</strong></div>
+                    <p class="comment-date">7/20/19 @@ 2:30 PM EST</p>
+                    <p>This is what I have to say!</p>
+                </div>
+
+                <div class="comment comment-border px-4 pt-1 mb-3">
+                    <div><strong>So and So says:</strong></div>
+                    <p class="comment-date">7/20/19 @@ 2:30 PM EST</p>
+                    <p>This is what I have to say!</p>
+                </div>
+
+                <div class="comment comment-border px-4 pt-1 mb-3">
+                    <div><strong>So and So says:</strong></div>
+                    <p class="comment-date">7/20/19 @@ 2:30 PM EST</p>
+                    <p>This is what I have to say!</p>
+                </div>
+
+                <!-- Add conditional section.  No comment box if not logged in. -->
+                
+                <div class="white-border p-2 text-light d-flex justify-content-between">
+                    <h4 class="d-inline">Sign In to comment!</h4>
+                    <h4><a class="d-inline" asp-action="Index" asp-controller="User">Register or Login</a></h4>
+
+                </div>
+
+
+                <form action="AddComment" controller="Home" class="hidden">
+                    <div class="form-group">
+                        <label name="addCommentBox">To Add a comment - Sign In</label>
+                        <textarea name="addCommentBox" class="form-control"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-dark border">Add Comment</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
 
 
 </div>
