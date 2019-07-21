@@ -17,8 +17,8 @@ namespace Bloggster.Controllers
             set { HttpContext.Session.SetInt32("UserId", (int)value); }
         }
 
-        private MyContext _dbContext;
-        public HomeController(MyContext context)
+        private BlogContext _dbContext;
+        public HomeController(BlogContext context)
         {
             _dbContext = context;
         }

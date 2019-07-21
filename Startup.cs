@@ -33,7 +33,7 @@ namespace Bloggster
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<MyContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
+            services.AddDbContext<BlogContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
             services.AddSession();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

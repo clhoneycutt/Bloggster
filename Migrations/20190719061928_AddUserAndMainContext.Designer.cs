@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bloggster.Migrations
 {
-    [DbContext(typeof(MyContext))]
+    [DbContext(typeof(BlogContext))]
     [Migration("20190719061928_AddUserAndMainContext")]
     partial class AddUserAndMainContext
     {

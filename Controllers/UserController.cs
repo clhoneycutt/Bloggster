@@ -18,8 +18,8 @@ namespace Bloggster.Controllers
             get { return HttpContext.Session.GetInt32("UserId"); }
             set { HttpContext.Session.SetInt32("UserId", (int)value); }
         }
-        private MyContext _dbContext;
-        public UserController(MyContext context)
+        private BlogContext _dbContext;
+        public UserController(BlogContext context)
         {
             _dbContext = context;
         }
