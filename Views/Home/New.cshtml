@@ -1,0 +1,26 @@
+@model Bloggster.Models.Post
+
+<div class="offset-md-3 col-md-6 mb-5">
+    <h4 class="display-4 text-center mb-5">New Blog Post</h4>
+    <form asp-action="create" asp-controller="Home" method="POST">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input for="Title" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Image">Image</label>
+            <input for="Image" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="ImageText">ImageText</label>
+            <input for="ImageText" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Body">Body</label>
+            <textarea for="Body" rows="5" class="form-control"></textarea>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-dark white-border">Post Blog</button>
+        </div>
+    </form>
+</div>

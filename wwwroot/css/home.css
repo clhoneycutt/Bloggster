@@ -1,4 +1,19 @@
 
+.blog-subtitle-icon{
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blog-subtitle-text{
+    font-size: 12px;
+    display: inline-block;
+}
+
+hr{
+    margin: 4px 0px;
+}
+
 .comment{
     background-color: rgb(70, 70, 70);
 }

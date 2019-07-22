@@ -9,29 +9,31 @@ namespace Bloggster.Models
     public class User
     {
         [Key]
-        public int UserID{get;set;}
+        public int UserID {get;set;}
 
         [Required(ErrorMessage="Please enter your First Name")]
         [MinLength(2)]
-        public string FirstName{get;set;}
+        public string FirstName {get;set;}
 
         [Required(ErrorMessage="Please enter your Last Name")]
         [MinLength(2)]
-        public string LastName{get;set;}
+        public string LastName {get;set;}
 
         [Required(ErrorMessage="Please enter your Email Address")]
         [EmailAddress]
-        public string Email{get;set;}
+        public string Email {get;set;}
 
         [Required(ErrorMessage="Please enter a password")]
         [MinLength(8, ErrorMessage ="Password must be 8 characters or longer.")]
         [DataType(DataType.Password)]
-        public string Password{get;set;}
+        public string Password {get;set;}
 
         [Required(ErrorMessage="Please confirm your password.")]
         [Compare("Password")]
         [NotMapped]
-        public string ConfPassword{get;set;}
+        public string ConfPassword {get;set;}
+
+        public bool isAdmin {get;set;}
 
         public DateTime CreatedAt {get;set;} = DateTime.Now;
 
@@ -50,6 +52,6 @@ namespace Bloggster.Models
         
         [Required(ErrorMessage="Password is required")]
         [DataType(DataType.Password)]
-        public string Password{get;set;}
+        public string Password {get;set;}
     }
 }

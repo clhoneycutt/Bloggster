@@ -10,7 +10,6 @@ namespace Bloggster.Models
     {
         [Key]
         public int PostID {get;set;}
-
         public int BloggerID {get;set;}
 
         [Required(ErrorMessage="Title cannot be empty")]
@@ -27,16 +26,9 @@ namespace Bloggster.Models
         [Required]
         public string ImageText {get;set;}
 
-        [Required]
-        public DateTime CreatedAt {get;set;}
-
-        [Required]
-        public DateTime UpdatedAt {get;set;}
-
-        [Required]
-        public User User {get;set;}
-
-
+        public DateTime CreatedAt {get;set;} = DateTime.Now;
+        public DateTime UpdatedAt {get;set;} = DateTime.Now;
+        public User Blogger {get;set;}
         public List<Comment> Comments {get;set;}
 
     }

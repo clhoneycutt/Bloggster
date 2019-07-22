@@ -1,4 +1,11 @@
-﻿*{
+﻿/* Default and Reset attributes */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+p{
     padding: 0px;
     margin: 0px;
 }
@@ -17,6 +24,12 @@ body{
     color: #DDD;
 }
 
+/* Single attribute classes */
+
+.fullWidth{
+    width: 100%
+}
+
 .hidden{
     display: none;
 }
@@ -27,6 +40,10 @@ body{
 
 .bg-shadowblue{
     background-color: #16204D;
+}
+
+.vert-align-bottom{
+    vertical-align: bottom;
 }
 
 

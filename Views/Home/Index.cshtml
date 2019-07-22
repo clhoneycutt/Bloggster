@@ -1,1 +1,32 @@
+@model List<Post>
+
+@{
+    ViewData["Title"] = "Chris' Blog";
+}
+
 <h2><a asp-action="show">Blog Post</a></h2>
+<h2><a asp-action="new">Create Post</a></h2>
+
+<div class="d-flex flex-wrap">
+    <div class="card pt-3 col-12 col-md-4 bg-shadowblue white-border mb-5">
+        <img src="http://placekitten.com/g/320/200" alt="" class="card-img-top">
+        <h6 class="text-center card-subtitle mt-3 blog-subtitle">smol kitty</h6>
+        <div class="card-body">
+            <h4 class="card-title">Blog Title</h4>
+            <hr>
+            <div class="fullWidth comment">
+                <i class="material-icons blog-subtitle-icon text-center">person</i>
+                <p class="blog-subtitle-text">UserName</p>
+                <i class="material-icons blog-subtitle-icon">date_range</i>
+                <p class="blog-subtitle-text">7/21/2019 10:43AM</p>
+                <i class="material-icons blog-subtitle-icon">comment</i>
+                <p class="blog-subtitle-text">3 comments</p>
+            </div>
+            <hr>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, dolore doloribus! Dolores nobis eligendi cum provident. Voluptatem molestiae delectus quas laborum est veritatis adipisci repellat dolorum aspernatur. Inventore, sed debitis!</p>
+            <a asp-action="show">read more>></a>
+        </div>
+    </div>
+
+
+</div>
